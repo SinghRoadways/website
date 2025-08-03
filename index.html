@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Singh Roadways - Your Trusted Logistics Partner</title>
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Leaflet CSS for interactive map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+</head>
+
+<body id="top">
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">Singh Roadways Pvt Ltd</a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">Singh Roadways Pvt Ltd</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>
+              <span>Home</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>
+              <span>About</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link" data-nav-link>
+              <span>Services</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>
+              <span>Contact</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-contact">
+
+        <div>
+          <p class="contact-label">Call Us</p>
+          <a href="tel:+919340121612" class="contact-number">+91 9340121612</a>
+        </div>
+
+        <div class="contact-icon">
+          <ion-icon name="call-outline"></ion-icon>
+        </div>
+
+      </div>
+
+      <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <section class="section hero" aria-label="home" id="home"
+        style="background-image: url('./assets/images/hero-banner.jpg');
+               background-size: cover; 
+               background-position: center; 
+               background-repeat: no-repeat; 
+               ">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h2 class="h1 hero-title">
+              <span class="span"></span> Logistics Solutions
+            </h2>
+
+            <p class="hero-text">
+              At Singh Roadways, we deliver your goods swiftly and securely across India.
+            </p>
+
+            <a href="#about" class="btn-outline">Explore Our Services</a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner img-holder" style="--width: 400; --height: 720;">
+            <img src="./assets/images/about_sec.jpg" width="400" height="720" loading="lazy" alt=""
+              class="img-cover">
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">Why Choose Singh Roadways</p>
+
+            <h2 class="h2 section-title">Your Partner in Seamless Logistics</h2>
+
+            <p class="section-text">
+              Singh Roadways offers tailored transport and logistics solutions, ensuring efficiency, reliability, and customer satisfaction.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+                <p class="about-text">
+                  Nationwide coverage with a robust fleet for all your transport needs.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+                <p class="about-text">
+                  Advanced tracking systems for real-time shipment updates.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+                <p class="about-text">
+                  Committed to timely deliveries with a focus on safety.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+                <p class="about-text">
+                  Customized logistics solutions to meet unique business needs.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+                <p class="about-text">
+                  Dedicated customer support for seamless communication.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+                <p class="about-text">
+                  Eco-friendly practices to support sustainable logistics.
+                </p>
+              </li>
+
+            </ul>
+
+            <a href="#service" class="btn">Learn More About Us</a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section service" id="service" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle">Our Services</p>
+
+          <h2 class="h2 section-title">Reliable Transport Solutions</h2>
+
+          <p class="section-text">
+            Singh Roadways provides comprehensive logistics services to streamline your supply chain and ensure timely deliveries.
+          </p>
+
+          <ul class="service-list grid-list">
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-1.png" width="80" height="60" loading="lazy" alt="Truck">
+                </div>
+                <h3 class="h3 card-title">
+                  <span class="span">01</span> Full Truckload
+                </h3>
+                <p class="card-text">
+                  Efficient and cost-effective transport for large shipments across India.
+                </p>
+                <a href="#" class="btn-link">
+                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                  <span class="span">View Details</span>
+                </a>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-5.png" width="60" height="60" loading="lazy" alt="Warehouse">
+                </div>
+                <h3 class="h3 card-title">
+                  <span class="span">02</span> Proper Storage
+                </h3>
+                <p class="card-text">
+                  Secure and scalable storage solutions for your inventory needs.
+                </p>
+                <a href="#" class="btn-link">
+                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                  <span class="span">View Details</span>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-6.png" width="50" height="60" loading="lazy" alt="Express">
+                </div>
+                <h3 class="h3 card-title">
+                  <span class="span">03</span> Express Delivery
+                </h3>
+                <p class="card-text">
+                  Fast and reliable delivery for time-sensitive shipments.
+                </p>
+                <a href="#" class="btn-link">
+                  <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                  <span class="span">View Details</span>
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section feature" aria-label="feature">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <div>
+              <p class="section-subtitle">Our Strengths</p>
+
+              <h2 class="h2 section-title">Comprehensive Logistics Solutions</h2>
+
+              <p class="section-text">
+                From transport to warehousing, Singh Roadways offers end-to-end solutions tailored to your business.
+              </p>
+            </div>
+
+            <a href="#" class="btn">Discover More</a>
+
+          </div>
+
+          <ul class="feature-list grid-list">
+
+            <li>
+              <div class="feature-card" style="--card-number: '01'">
+
+                <div class="card-icon">
+                  <img src="./assets/images/feature-icon-1.png" width="72" height="91" alt="">
+                </div>
+
+                <h3 class="h3 card-title">Customized Logistics</h3>
+
+                <p class="card-text">
+                  Tailored transport solutions to meet your specific business requirements.
+                </p>
+
+                <a href="#" class="card-btn" aria-label="Read more">
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="feature-card" style="--card-number: '02'">
+
+                <div class="card-icon">
+                  <img src="./assets/images/feature-icon-2.png" width="94" height="94" alt="">
+                </div>
+
+                <h3 class="h3 card-title">Nationwide Network</h3>
+
+                <p class="card-text">
+                  Extensive reach across India with multiple hubs for efficient delivery.
+                </p>
+
+                <a href="#" class="card-btn" aria-label="Read more">
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="feature-card" style="--card-number: '03'">
+
+                <div class="card-icon">
+                  <img src="./assets/images/feature-icon-3.png" width="93" height="93" alt="">
+                </div>
+
+                <h3 class="h3 card-title">Real-Time Tracking</h3>
+
+                <p class="card-text">
+                  Monitor your shipments in real-time with our advanced tracking system.
+                </p>
+
+                <a href="#" class="card-btn" aria-label="Read more">
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section stats" aria-label="stats">
+        <div class="container">
+
+          <p class="section-subtitle">Our Achievements</p>
+
+          <h2 class="h2 section-title">Delivering Excellence</h2>
+
+          <p class="section-text">
+            Singh Roadways takes pride in our robust fleet and extensive delivery record, ensuring top-notch logistics services.
+          </p>
+
+          <ul class="stats-list grid-list">
+
+            <li>
+              <div class="stats-card">
+                <h3 class="h3 card-title">50+</h3>
+                <p class="card-text">Trucks in Our Fleet</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card">
+                <h3 class="h3 card-title">50,000+</h3>
+                <p class="card-text">Logistics Delivered</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card">
+                <h3 class="h3 card-title">22</h3>
+                <p class="card-text">States Covered Nationwide</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section map" aria-label="map" id="map">
+        <div class="container">
+
+          <p class="section-subtitle">Our Reach</p>
+
+          <h2 class="h2 section-title">Serving Key Regions in India</h2>
+
+          <p class="section-text">
+            Singh Roadways operates extensively across Northern India, with strategic hubs in Uttar Pradesh, Madhya Pradesh, Punjab, and Rajasthan.
+          </p>
+
+          <div id="india-map" style="height: 500px; width: 100%;"></div>
+
+        </div>
+      </section>
+      <section class="section contact" aria-label="contact" id="contact">
+        <div class="container">
+
+          <p class="section-subtitle">Get in Touch</p>
+
+          <h2 class="h2 section-title">Contact Us for Your Logistics Needs</h2>
+
+          <p class="section-text">
+            Reach out to Singh Roadways for tailored logistics solutions. Fill out the form below, and our team will get back to you promptly.
+          </p>
+
+          <form action="https://formspree.io/f/xnnzbgka" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <div class="input-wrapper">
+                <ion-icon name="person-outline" class="input-icon"></ion-icon>
+                <input type="text" name="name" id="name" placeholder="Your Name" required class="form-input">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <div class="input-wrapper">
+                <ion-icon name="mail-outline" class="input-icon"></ion-icon>
+                <input type="email" name="email" id="email" placeholder="Your Email" required class="form-input">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone</label>
+              <div class="input-wrapper">
+                <ion-icon name="call-outline" class="input-icon"></ion-icon>
+                <input type="tel" name="phone" id="phone" placeholder="Your Phone Number" required class="form-input">
+              </div>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top section">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Singh Roadways</a>
+
+          <p class="footer-text">
+            Singh Roadways is your trusted partner for reliable and efficient logistics solutions across India.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Quick Links</p>
+          </li>
+
+          <li>
+            <a href="#about" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#service" class="footer-link">Services</a>
+          </li>
+
+          <li>
+            <a href="#about" class="footer-link">FAQ</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2025 Singh Roadways. All Rights Reserved.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+  <script src="./assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- Leaflet JS for interactive map -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+  <script>
+    // Initialize Leaflet map
+    var map = L.map('india-map').setView([22.5, 79], 5);
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Define coordinates and info for key logistics hubs
+    var hubs = [
+      { name: "Uttar Pradesh Hub", coords: [26.85, 80.91], info: "Lucknow: Major hub for northern logistics" },
+      { name: "Madhya Pradesh Hub", coords: [23.25, 77.41], info: "Bhopal: Central India distribution center" },
+      { name: "Punjab Hub", coords: [30.79, 76.78], info: "Chandigarh: Key hub for Punjab operations" },
+      { name: "Rajasthan Hub", coords: [26.91, 75.78], info: "Jaipur: Strategic hub for western India" },
+      { name: "Amravati", coords: [20.9374, 77.7796], info: "Logistics support in Maharashtra" },
+      { name: "Jabalpur", coords: [23.1815, 79.9864], info: "Central MP logistics node" },
+      { name: "Jhansi", coords: [25.4484, 78.5685], info: "Important city in Bundelkhand region" },
+      { name: "Kurukshetra", coords: [29.9695, 76.8783], info: "Historical city with strategic road access" },
+      { name: "Aligarh", coords: [27.8974, 78.088], info: "Educational and industrial hub" },
+      { name: "Meerut", coords: [28.9845, 77.7064], info: "Close proximity to NCR" },
+      { name: "Itarsi", coords: [22.6148, 77.7624], info: "Major railway junction in MP" },
+      { name: "Agra", coords: [27.1767, 78.0081], info: "Tourist and commercial hub" },
+      { name: "Chhindwara", coords: [22.0574, 78.9382], info: "Growing industrial center" },
+      { name: "Raigarh", coords: [21.8974, 83.3966], info: "Chhattisgarh logistics point" },
+      { name: "Jamshedpur", coords: [22.8046, 86.2029], info: "Steel city of India" },
+      { name: "Lalitpur", coords: [24.6900, 78.4180], info: "Southern UP logistics support" },
+      { name: "Guna", coords: [24.6542, 77.3119], info: "MP distribution point" },
+      { name: "Kota", coords: [25.2138, 75.8648], info: "Educational and trading center" },
+      { name: "Latur", coords: [18.4088, 76.5604], info: "Important city in Marathwada" },
+      { name: "Kurnool", coords: [15.8281, 78.0373], info: "Gateway to Rayalaseema" },
+      { name: "Pune", coords: [18.5204, 73.8567], info: "Industrial and IT hub" },
+      { name: "Kolhapur", coords: [16.7050, 74.2433], info: "Textile and foundry industries" },
+      { name: "Vijayawada", coords: [16.5062, 80.6480], info: "Andhra’s key trade center" }
+    ];
+
+    // Add markers with tooltips for each hub
+    hubs.forEach(function(hub) {
+      L.marker(hub.coords)
+        .addTo(map)
+        .bindTooltip(hub.name + "<br>" + hub.info, { permanent: false, direction: 'top' });
+    });
+
+    // Add GeoJSON for approximate state boundaries (simplified for performance)
+    var statesGeoJSON = {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": { "name": "Uttar Pradesh" },
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[[80, 26], [81, 26], [81, 27], [80, 27], [80, 26]]]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": { "name": "Madhya Pradesh" },
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[[77, 22], [78, 22], [78, 23], [77, 23], [77, 22]]]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": { "name": "Punjab" },
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[[75, 30], [76, 30], [76, 31], [75, 31], [75, 30]]]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": { "name": "Rajasthan" },
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[[74, 26], [75, 26], [75, 27], [74, 27], [74, 26]]]
+          }
+        }
+      ]
+    };
+
+    // Style for highlighted states
+    L.geoJSON(statesGeoJSON, {
+      style: function(feature) {
+        return {
+          fillColor: '#FFD700',
+          weight: 2,
+          opacity: 1,
+          color: '#333',
+          fillOpacity: 0.5
+        };
+      },
+      onEachFeature: function(feature, layer) {
+        layer.bindTooltip(feature.properties.name, { permanent: false });
+      }
+    }).addTo(map);
+  </script>
+
+</body>
+
+</html>
