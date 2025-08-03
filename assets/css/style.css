@@ -383,7 +383,7 @@ body {
 }
 
 .hero-content {
-  background-color: hsla(210, 70%, 15%, 0.8);
+  background-color: transparent;
   text-align: center;
   padding: 50px;
   border-radius: 12px;
@@ -1038,4 +1038,5 @@ body {
   .about-banner { max-width: 450px; }
 
   .about .abs-img-2 { width: max-content; }
+
 }
