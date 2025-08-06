@@ -10,7 +10,6 @@
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
-
 :root {
 
   /**
@@ -756,8 +755,6 @@ body {
     padding-inline: 15px; /* Adjust container padding for arrows */
   }
 }
-
-
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
@@ -1167,7 +1164,4 @@ body {
   .about-banner { max-width: 450px; }
 
   .about .abs-img-2 { width: max-content; }
-
 }
-
-
